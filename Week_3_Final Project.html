@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Namibia</title>
+    <style>
+      body {
+        font-family: Georgia, "Times New Roman", Times, serif;
+        color: #504846;
+      }
+      h1 {
+        text-align: center;
+        color: #504846;
+      }
+      h2 {
+        text-align: center;
+        border: 3px solid rgb(214, 207, 207);
+        padding: 15px 5px;
+        font-size: 20px;
+        border-radius: 4px;
+      }
+
+      img {
+        max-width: 100%;
+        border-radius: 5px;
+        display: block;
+        margin: 0 auto;
+      }
+
+      p {
+        line-height: 1.5;
+        font-size: 16px;
+        padding: 15px 5px;
+        margin: 20px 0 10px;
+      }
+      a {
+        text-align: center;
+      }
+
+      a:visited {
+        color: #2b565c;
+      }
+
+      button {
+        display: block;
+        margin: 0 auto;
+        background-color: #2b565c;
+        color: white;
+        font-size: 18px;
+        padding: 20px 30px;
+        border: none;
+        border-radius: 6px;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+        transition: all 200ms ease-in-out;
+      }
+
+      button:hover {
+        opacity: 0.9;
+        cursor: pointer;
+      }
+
+      .intro {
+        text-align: center;
+      }
+
+      .learn-more {
+        display: block;
+        margin-top: 10px;
+        text-decoration: none;
+        color: #2b565c;
+        font-size: 14px;
+      }
+      .learn-more:hover {
+        text-decoration: underline;
+        color: #aa4d1f;
+      }
+      .linkedIn:hover {
+        text-decoration: underline;
+        color: #aa4d1f;
+      }
+
+      .footer {
+        text-align: center;
+      }
+      .content {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 5px 20px;
+        background: linear-gradient(to top, #c3986b 0%, #adabab 100%);
+        border-radius: 6px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content">
+      <h1>
+        Namibia 🇳🇦
+        <br />
+      </h1>
+      <h2>The Biggest Hidden Gem in Africa!</h2>
+      <p .class="intro">
+        Namibia is a fascinating country in the southern part of Africa and
+        definitely qualifies as one of the countries you should visit at least
+        once in your lifetime.
+      </p>
+
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/039/236/original/DSC09295.JPG?1656765686"
+        alt="Sand Dune"
+      />
+
+      <p>
+        Namibia has some, <strong> unique and extraordinary </strong> scenery.
+        Attractions abound and activities are limitless. But it's the whole
+        journey that is the most extraordinary attraction of them all. Just
+        driving through the country will be an experience quite unlike any
+        you've had before. <br />
+        Right now, more and more Digital Nomads are exploring Namibia. Namibia
+        is slowly becoming the #1 Co-working and Co-living destination.
+
+        <br />
+        <a href="https://desert-ocean.com/" target="_blank" class="learn-more">
+          learn more about Co-working and Co-living
+        </a>
+      </p>
+      <button class="buy-button">Book Your Adventure</button>
+      <p class="footer">
+        This page was built by
+        <a
+          href="https://www.linkedin.com/in/kim-seebach-a46a99183/"
+          target="_blank"
+          class="linkedIn"
+        >
+          Kim Seebach</a
+        >
+      </p>
+    </div>
+    <script>
+      function buy() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your E-Mail address?");
+
+        alert(
+          "Thank you " +
+            name +
+            "! We are putting together an adventure for you. We will be in touch.🦁"
+        );
+      }
+
+      let buyButton = document.querySelector(".buy-button");
+      buyButton.addEventListener("click", buy);
+    </script>
+  </body>
+</html>
